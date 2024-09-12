@@ -5,18 +5,25 @@ Based on code by u/bass-blowfish
 
 Currently working in v11
 Will be tested in v12 asap
+
+This file is 99% the same as the original.
+You can retrieve what I updated by following comments.
 -->
 
+<!-- Recreating the header with a custom id -->
 <header id="custom-header" class="flexcol"></header>
 
 <form id="join-game" class="flexrow" autocomplete="off">
     <div class="column left flexcol">
+        <!-- Adding the custom-app class to the form -->
         <div class="custom-app flexcol join-form">
             <h2 class="divider">{{ localize "JOIN.HeaderJoin" }}</h2>
             <div class="form-group">
                 <label class="icon" data-tooltip="{{ localize 'JOIN.SelectUser' }}"><i class="fas fa-user"></i></label>
                 <div class="form-fields">
+                    <!-- Adding the required keyword -->
                     <select required name="userid">
+                        <!-- Adding disabled selected hidden keywords to username -->
                         <option value="" disabled selected hidden>User</option>
                         {{#each users}}
                         <option value="{{this.id}}" {{#if this.active}}disabled{{/if}}>{{this.name}}</option>

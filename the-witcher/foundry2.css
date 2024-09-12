@@ -10,6 +10,7 @@ Will be tested in v12 asap
 /* CONFIGURATION AREA */
 body.auth, #watermark {
   --login-world-logo:url("/the-witcher-logo.webp");
+  --login-world-logo-size:55%;
   --login-button-color:rgba(143, 143, 143, 0.8);
   --login-button-color-hover:rgba(143, 143, 143, 1.0);
   --login-button-text-color:black;
@@ -56,8 +57,9 @@ body.background {
 body.auth #custom-header {
   background:var(--login-world-logo);
   background-repeat:no-repeat;
-  background-size:55%;
+  background-size:var(--login-world-logo-size);
   background-position-x:center;
+  background-position-y:center;
   height:120px!important;
   border:none;
   box-shadow:none;
@@ -149,15 +151,10 @@ body.join #join-game {
 #join-game button:focus {
   outline:none
 }
-  
+
+/* ADDING A DICE NEXT TO LABEL */  
 #join-game button[name="join"]:after {
   content:"\f522";
-  padding-left:5px;
-  font-family:'FontAwesome'
-}
-  
-#join-game button[name="shutdown"]:after {
-  content:"\f023";
   padding-left:5px;
   font-family:'FontAwesome'
 }
@@ -209,7 +206,7 @@ body.auth #main-header h1, body.auth label.icon, #join-game-world, #join-game-de
   }
 }
 
-/* USER BY WALLPAPER / BACKGROUND */
+/* USED BY WALLPAPER / BACKGROUND */
 @-webkit-keyframes fade-in {
   0% {
     opacity: 0;

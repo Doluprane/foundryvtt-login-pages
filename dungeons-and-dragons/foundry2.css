@@ -11,8 +11,8 @@ Will be tested in v12 asap
 body.auth, #watermark {
   --login-world-logo: url("/d&d-logo.webp");
   --login-world-logo-size:50%;
-  --login-button-color: rgba(255, 1, 10, 0.8);
-  --login-button-color-hover: rgba(255, 1, 10, 1.0);
+  --login-button-color: rgba(255, 0, 0, 0.8);
+  --login-button-color-hover: rgba(255, 0, 0, 1.0);
   --login-button-text-color: black;
   --login-app-background-color: rgba(11, 9, 10, 0.8);
   --login-input-text-background-color: rgba(80, 2, 4, 1.0);

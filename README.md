@@ -1,6 +1,7 @@
 # Results
-* Vaesen
+## <p style="text-align:center;">Vaesen</p>
 ![Vaesen Rendered](_samples/vaesen-rendered.png)
+
 * Tales Frm The Loop
 ![Tales From The Loop Rendered](_samples/tftl-rendered.png)
 * Dungeons & Dragons

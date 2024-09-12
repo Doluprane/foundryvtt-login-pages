@@ -1,12 +1,12 @@
 # Results
 ### <p align="center">Vaesen</p>
-![Vaesen Rendered](_samples/vaesen-rendered.png)\
-### <p align="center">Tales Frm The Loop</p>
-![Tales From The Loop Rendered](_samples/tftl-rendered.png)\
+![Vaesen Rendered](_samples/vaesen-rendered.png)<br>
+### <p align="center">Tales From The Loop</p>
+![Tales From The Loop Rendered](_samples/tftl-rendered.png)<br>
 ### <p align="center">Dungeons & Dragons</p>
-![Dungeons & Dragons](_samples/d&d-rendered.png)\
+![Dungeons & Dragons](_samples/d&d-rendered.png)<br>
 ### <p align="center">The Witcher</p>
-![The Witcher](_samples/the-witcher-rendered.png)\
+![The Witcher](_samples/the-witcher-rendered.png)<br>
 
 # Requirements
 * A minimal resolution of 870px by 500px (shouldn't be an issue as Foundry requires 1024px by 700px to work).

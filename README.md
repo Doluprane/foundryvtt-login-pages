@@ -1,5 +1,5 @@
 # Results
-## <p style="text-align:center;">Vaesen</p>
+### <p align="center">Vaesen</p>
 ![Vaesen Rendered](_samples/vaesen-rendered.png)
 
 * Tales Frm The Loop

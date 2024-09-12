@@ -3,6 +3,12 @@
 ![Dungeons & Dragons](_samples/d&d-rendered.png)
 ![The Witcher](_samples/the-witcher-rendered.png)
 
+# Requirements
+* A minimal resolution of 870px by 500px (shouldn't be an issue as Foundry requires 1024px by 700px to work).
+* An access to your Foundry instance to modify files.
+
+# Deployment
+
 # Credits
 ### *I don't own any logos or backgrounds shown here. I will remove them if I violate any laws and/or intellectual property. Ask me in the [Issues](https://github.com/Doluprane/foundryvtt-login-pages/issues) tab of the project.*
 * Vaesen
@@ -18,5 +24,3 @@
 * The Witcher
     * Background is taken from [Wallhere](https://wallhere.com/en/wallpaper/1931009/) from [CelenaHehr](https://wallhere.com/en/user/3600649/).
     * Logo is taken from [CD Projekt RED](https://www.cdprojektred.com/) ([Website](https://www.thewitcher.com/)).
-
-Minimal resolution: 870*500px

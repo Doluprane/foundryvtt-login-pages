@@ -18,3 +18,5 @@
 * The Witcher
     * Background is taken from [Wallhere](https://wallhere.com/en/wallpaper/1931009/) from [CelenaHehr](https://wallhere.com/en/user/3600649/).
     * Logo is taken from [CD Projekt RED](https://www.cdprojektred.com/) ([Website](https://www.thewitcher.com/)).
+
+Minimal resolution: 870*500px

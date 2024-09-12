@@ -1,14 +1,17 @@
 <!--
 FoundryVTT Login Pages made by Doluprane
 Kind of a fork from github.com/dandln
-based on code by u/bass-blowfish
+Based on code by u/bass-blowfish
 
 Currently working in v11
+Will be tested in v12 asap
 -->
+
+<header id="custom-header" class="flexcol"></header>
 
 <form id="join-game" class="flexrow" autocomplete="off">
     <div class="column left flexcol">
-        <div class="app flexcol join-form">
+        <div class="custom-app flexcol join-form">
             <h2 class="divider">{{ localize "JOIN.HeaderJoin" }}</h2>
             <div class="form-group">
                 <label class="icon" data-tooltip="{{ localize 'JOIN.SelectUser' }}"><i class="fas fa-user"></i></label>

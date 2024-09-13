@@ -1,3 +1,7 @@
+Hello there,<br>
+This small css package aims to enhance and beautify the default log-in screen of the famous roleplaying platform [FoundryVTT](https://foundryvtt.com/).<br><br>
+Below you'll find everything you need to use the package.<br><br>
+
 # Results
 ### <p align="center">Vaesen</p>
 ![Vaesen Rendered](_samples/vaesen-rendered.png)<br>

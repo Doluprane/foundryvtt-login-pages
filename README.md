@@ -19,6 +19,11 @@ Below you'll find everything you need to use the package.
 
 # Deployment
 
+# Known bugs
+* If you upgrade your instance of FoundryVTT, you'll loose everything related to this package (backups are your friends).
+* Some drop-down buttons have their style changed in the Administrator Setup of FoundryVTT (only seen in "Application Configuration" and "Update"; this will not impact game sessions).
+* The H1 title (usually "FoundryVTT") shown in Administrator Setup is hidden (this will not impact game sessions).
+
 # Credits
 ### <p align="center">*I do not own any logos and/or backgrounds shown here. I will remove them if I violate any laws and/or intellectual property. Ask me in the [Issues](https://github.com/Doluprane/foundryvtt-login-pages/issues) tab of the project.<br>I am not affiliated with any brands shown in this GitHub repository.*</p>
 * Vaesen

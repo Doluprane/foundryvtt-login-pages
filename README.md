@@ -18,14 +18,22 @@ Below you'll find everything you need to use the package.
 * An access to your Foundry instance to modify files.
 
 # Deployment
+* OPTIONAL: Update your world's background (using the *Administrator Setup*).
+* Upload your world logo in your FoundryVTT instance.
+    * I advise you to use the *Administrator Setup* in the same way as if you were updating the world's background WITHOUT clicking on *Update World*. This will upload the file in the root directory of your FoundryVTT instance.
+* Overwrite your ```$foundry_path/resources/app/templates/setup/join-game.hbs``` with ![the one in the repo](join-game.hbs).
+* Concatenate your ```$foundry_path/resources/app/public/css/foundry2.css``` with (for example) ![The Witcher style](the-witcher/foundry2.css).
+* Don't forget to configure your updated CSS in the *Configuration Area*.
 
 # Known bugs
 * If you upgrade your instance of FoundryVTT, you'll loose everything related to this package (backups are your friends).
-* Some drop-down buttons have their style changed in the Administrator Setup of FoundryVTT (only seen in "Application Configuration" and "Update"; this will not impact game sessions).
-* The H1 title (usually "FoundryVTT") shown in Administrator Setup is hidden (this will not impact game sessions).
+* Some drop-down buttons have their style changed in the *Administrator Setup* (only seen in "Application Configuration" and "Update"; this will not impact game sessions).
+* The H1 title (usually "FoundryVTT") shown in *Administrator Setup* is hidden (this will not impact game sessions).
 
 # Credits
 ### <p align="center">*I do not own any logos and/or backgrounds shown here. I will remove them if I violate any laws and/or intellectual property. Ask me in the [Issues](https://github.com/Doluprane/foundryvtt-login-pages/issues) tab of the project.<br>I am not affiliated with any brands shown in this GitHub repository.*</p>
+This is more or less a fork from https://github.com/dandln/Foundry-VTT-Prettier-Login-Screen based on a code of [u/bass-blowfish](https://www.reddit.com/user/bass-blowfish/)<br>
+
 * Vaesen
     * Background and logo are taken from [Free League Publishing](https://freeleaguepublishing.com/) ([Website](https://freeleaguepublishing.com/games/vaesen/) and/or [Rulebooks](https://freeleaguepublishing.com/shop/vaesen-2/vaesen-nordic-horror-roleplaying/)).
 

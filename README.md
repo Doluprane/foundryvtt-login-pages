@@ -21,8 +21,8 @@ Below you'll find everything you need to use the package.
 * OPTIONAL: Update your world's background (using the *Administrator Setup*).
 * Upload your world logo in your FoundryVTT instance.
     * I advise you to use the *Administrator Setup* in the same way as if you were updating the world's background WITHOUT clicking on *Update World*. This will upload the file in the root directory of your FoundryVTT instance.
-* Overwrite your ```$foundry_path/resources/app/templates/setup/join-game.hbs``` with ![the one in the repo](join-game.hbs).
-* Concatenate your ```$foundry_path/resources/app/public/css/foundry2.css``` with (for example) ![The Witcher style](the-witcher/foundry2.css).
+* Overwrite your ```$foundry_path/resources/app/templates/setup/join-game.hbs``` with [the one in the repo](join-game.hbs).
+* Concatenate your ```$foundry_path/resources/app/public/css/foundry2.css``` with (for example) [The Witcher style](the-witcher/foundry2.css).
 * Don't forget to configure your updated CSS in the *Configuration Area*.
 
 # Known bugs
@@ -32,7 +32,7 @@ Below you'll find everything you need to use the package.
 
 # Credits
 ### <p align="center">*I do not own any logos and/or backgrounds shown here. I will remove them if I violate any laws and/or intellectual property. Ask me in the [Issues](https://github.com/Doluprane/foundryvtt-login-pages/issues) tab of the project.<br>I am not affiliated with any brands shown in this GitHub repository.*</p>
-This is more or less a fork from https://github.com/dandln/Foundry-VTT-Prettier-Login-Screen based on a code of [u/bass-blowfish](https://www.reddit.com/user/bass-blowfish/)<br>
+<br>This is more or less a fork from (dandln)https://github.com/dandln/Foundry-VTT-Prettier-Login-Screen based on a code of [u/bass-blowfish](https://www.reddit.com/user/bass-blowfish/)<br>
 
 * Vaesen
     * Background and logo are taken from [Free League Publishing](https://freeleaguepublishing.com/) ([Website](https://freeleaguepublishing.com/games/vaesen/) and/or [Rulebooks](https://freeleaguepublishing.com/shop/vaesen-2/vaesen-nordic-horror-roleplaying/)).

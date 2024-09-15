@@ -23,7 +23,7 @@ Below you'll find everything you need to use the package.
     * I advise you to use the *Administrator Setup* in the same way as if you were updating the world's background WITHOUT clicking on *Update World*. This will upload the file in the root directory of your FoundryVTT instance.
 * Overwrite your ```$foundry_path/resources/app/templates/setup/join-game.hbs``` with [the one in the repo](join-game.hbs).
 * Concatenate your ```$foundry_path/resources/app/public/css/foundry2.css``` with (for example) [The Witcher style](the-witcher/foundry2.css).
-* Don't forget to configure your updated CSS in the *Configuration Area*.
+* Don't forget to configure your updated CSS in the [*Configuration Area*](the-witcher/foundry2.css#L10).
 
 # Known bugs
 * If you upgrade your instance of FoundryVTT, you'll loose everything related to this package (backups are your friends).

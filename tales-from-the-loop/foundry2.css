@@ -1,61 +1,79 @@
 /*
 FoundryVTT Login Pages made by Doluprane
 Kind of a fork from github.com/dandln
-based on code by u/bass-blowfish
+Based on code by u/bass-blowfish
 
 Currently working in v11
+Will be tested in v12 asap
 */
 
 /* CONFIGURATION AREA */
 body.auth, #watermark {
-  --login-world-logo: url("/tales-from-the-loopl-logo.png");
-  --login-footer-logo: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=);
-  --login-footer-logo-height: 25px;
-  --login-button-color: rgba(243, 135, 4, 0.8);
-  --login-button-color-hover: rgba(243, 135, 4, 1.0);
-  --login-button-text-color: black;
-  --login-show-text-title: none;
-  --login-app-background-color: rgba(11, 9, 10, 0.8);
-  --login-input-text-background-color: rgba(66, 49, 14, 1.0);
-  --login-input-text-color: white;
-  --login-input-text-color-placeholder: rgba(135, 135, 135, 1.0);
-  --font: Trixie,'Courier New',Courier,monospace;
+  --login-world-logo:url("/tftl-logo.webp");
+  --login-world-logo-size:65%;
+  --login-button-color:rgba(243, 135, 4, 0.8);
+  --login-button-color-hover:rgba(243, 135, 4, 1.0);
+  --login-button-text-color:black;
+  --login-app-background-color:rgba(11, 9, 10, 0.8);
+  --login-input-text-background-color:rgba(66, 49, 14, 1.0);
+  --login-input-text-color:white;
+  --login-input-text-color-placeholder:rgba(135, 135, 135, 1.0);
+  --font:Trixie,'Courier New',Courier,monospace
 }
 
-body.auth .app {
+/* FORM */
+body.auth .custom-app {
+  padding:1.15rem;
   box-shadow:0 0 5px black;
-  background:var(--login-app-background-color)
+  background:var(--login-app-background-color);
+  width:25%;
+  position:fixed!important;
+  top:60%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  flex:none;
+  gap:1rem;
+  max-width: var(--maxWidth);
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  backdrop-filter: blur(4px);
+  border-radius: 8px;
+  z-index: var(--z-index-app);
+  transform-origin: top left;
+  -webkit-animation: slide-in-bck-bottom 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: slide-in-bck-bottom 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both
 }
-  
-body.auth #main-header {
+
+/* BACKGROUND */
+body.background {
+  -webkit-animation: fade-in 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  animation: fade-in 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both
+}
+
+/* CUSTOM HEADER WITH WORLD LOGO */
+body.auth #custom-header {
   background:var(--login-world-logo);
   background-repeat:no-repeat;
-  background-size:60%;
-  background-position:center;
+  background-size:var(--login-world-logo-size);
+  background-position-x:center;
+  background-position-y:center;
   height:120px!important;
   border:none;
-  box-shadow:none
-}
-  
-body.auth #watermark::before {
-  display:block;
-  content:" ";
-  background:var(--login-footer-logo);
-  background-size:contain;
-  background-repeat:no-repeat;
-  background-position:center;
-  width:var(--maxWidth);
-  height:var(--login-footer-logo-height);
-  margin-top:calc(calc(var(--login-footer-logo-height) * -1) + 25px);
-  margin-bottom:5px
+  box-shadow:none;
+  position:fixed;  
+  top:7.5%; 
+  left:0;
+  width:100%;
+  height:35vh!important;
+  -webkit-animation: slide-in-bck-top 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: slide-in-bck-top 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
   
 body.join #join-game {
   grid-template-columns:1fr!important
-}
-  
-body.auth #main-header h1 {
-  display:var(--login-show-text-title)
 }
   
 #join-game {
@@ -133,22 +151,12 @@ body.auth #main-header h1 {
 #join-game button:focus {
   outline:none
 }
-  
+
+/* ADDING A DICE NEXT TO LABEL */  
 #join-game button[name="join"]:after {
   content:"\f522";
   padding-left:5px;
   font-family:'FontAwesome'
-}
-  
-#join-game button[name="shutdown"]:after {
-  content:"\f023";
-  padding-left:5px;
-  font-family:'FontAwesome'
-}
-  
-body.auth .app:not(.window-app) {
-  padding:1.15rem;
-  margin-top:4.5rem
 }
   
 #join-game select:required:invalid {
@@ -162,10 +170,82 @@ body.auth .app:not(.window-app) {
   text-align-last:center
 }
   
-body.auth label.icon, #join-game-world, #join-game-details, #join-game .divider, #join-game .return-setup, #join-game button[name="join"] i.fas.fa-check, #join-game button[name="shutdown"] .fas.fa-lock, #join-game select option:checked {
-  display:none
-}
-  
 #join-game input::placeholder, #join-game select option:disabled {
   color:var(--login-input-text-color-placeholder)
+}
+
+body.auth #main-header h1, body.auth label.icon, #join-game-world, #join-game-details, #join-game .divider, #join-game .return-setup, #join-game button[name="join"] i.fas.fa-check, #join-game button[name="shutdown"] .fas.fa-lock, #join-game select option:checked {
+  display:none
+}
+
+/* CSS ANIMATIONS */
+
+/* USED BY LOG IN FORM */
+@-webkit-keyframes slide-in-bck-bottom {
+  0% {
+    -webkit-transform:  translate(-50%, 500px);
+            transform:  translate(-50%, 500px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform:  translate(-50%, 0);
+            transform:  translate(-50%, 0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-bck-bottom {
+  0% {
+    -webkit-transform:  translate(-50%, 500px);
+            transform:  translate(-50%, 500px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform:  translate(-50%, 0);
+            transform:  translate(-50%, 0);
+    opacity: 1;
+  }
+}
+
+/* USED BY WALLPAPER / BACKGROUND */
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* USED BY HEADER */
+@-webkit-keyframes slide-in-bck-top {
+  0% {
+    -webkit-transform: translateZ(700px) translateY(-300px);
+            transform: translateZ(700px) translateY(-300px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0) translateY(0);
+            transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-bck-top {
+  0% {
+    -webkit-transform: translateZ(700px) translateY(-300px);
+            transform: translateZ(700px) translateY(-300px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0) translateY(0);
+            transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
 }

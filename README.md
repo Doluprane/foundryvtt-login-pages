@@ -1,6 +1,6 @@
 # Summary
 Hello there,<br>
-This small css package aims to enhance and beautify the default log-in screen of the famous roleplaying platform [FoundryVTT](https://foundryvtt.com/).
+This small CSS package aims to enhance and beautify the default log-in screen of the famous roleplaying platform [FoundryVTT](https://foundryvtt.com/).
 Below you'll find everything you need to use the package.
 
 # Results
@@ -38,12 +38,12 @@ Below you'll find everything you need to use the package.
     * Background and logo are taken from [Free League Publishing](https://freeleaguepublishing.com/) ([Website](https://freeleaguepublishing.com/games/vaesen/) and/or [Rulebooks](https://freeleaguepublishing.com/shop/vaesen-2/vaesen-nordic-horror-roleplaying/)).
 
 * Tales From The Loop 
-    * Background is taken from The Electric State book from Simon Stålenhag.
+    * Background is taken from [Swedish Machines](https://www.simonstalenhag.se/svema.html) book from [Simon Stålenhag](https://www.salomonssonagency.se/simon-stalenhag).
     * Logo is taken from [Free League Publishing](https://freeleaguepublishing.com/) ([Website](https://freeleaguepublishing.com/games/tales-from-the-loop-rpg/) and/or [Rulebooks](https://freeleaguepublishing.com/shop/tales-from-the-loop/core-rulebook/)).
 
 * Dungeons & Dragons
     * Background and logo are taken from [Wizards of the Coast](https://company.wizards.com/) ([Website](https://dnd.wizards.com/) and/or [Rulebooks](https://marketplace.dndbeyond.com/category/dungeon-masters-guide/)).
 
 * The Witcher
-    * Background is taken from [Wallhere](https://wallhere.com/en/wallpaper/1931009/) from [CelenaHehr](https://wallhere.com/en/user/3600649/).
+    * Background is taken from [Wallhere](https://wallhere.com/en/wallpaper/1931009/) from artist [CelenaHehr](https://wallhere.com/en/user/3600649/).
     * Logo is taken from [CD Projekt RED](https://www.cdprojektred.com/) ([Website](https://www.thewitcher.com/)).

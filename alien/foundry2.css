@@ -9,7 +9,7 @@ Will be tested in v12 asap
 
 /* CONFIGURATION AREA */
 body.auth, #watermark {
-  --login-world-logo:url("/tftl-logo.webp");
+  --login-world-logo:url("/alien-logo.webp");
   --login-world-logo-size:65%;
   --login-button-color:rgba(35, 62, 19, 0.8);
   --login-button-color-hover:rgba(35, 62, 19, 1.0);

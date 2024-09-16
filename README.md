@@ -12,6 +12,8 @@ Below you'll find everything you need to use the package.
 ![Dungeons & Dragons](_samples/d&d-rendered.png)<br>
 ### <p align="center">The Witcher</p>
 ![The Witcher](_samples/the-witcher-rendered.png)<br>
+### <p align="center">Alien</p>
+![Alien](_samples/alien-rendered.png)<br>
 
 # Requirements
 * A minimal resolution of 870px by 500px (shouldn't be an issue as Foundry requires 1024px by 700px to work).
@@ -47,3 +49,6 @@ Below you'll find everything you need to use the package.
 * The Witcher
     * Background is taken from [Wallhere](https://wallhere.com/en/wallpaper/1931009/) from artist [CelenaHehr](https://wallhere.com/en/user/3600649/).
     * Logo is taken from [CD Projekt RED](https://www.cdprojektred.com/) ([Website](https://www.thewitcher.com/)).
+
+* Alien
+    * Background and logo are taken from [Free League Publishing](https://freeleaguepublishing.com/) ([Website](https://freeleaguepublishing.com/games/alien/) and/or [Rulebooks](https://freeleaguepublishing.com/shop/alien-rpg-2/)).

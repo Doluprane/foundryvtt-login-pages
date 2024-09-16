@@ -20,7 +20,8 @@ Below you'll find everything you need to use the package.
 * An access to your Foundry instance to modify files.
 
 # Deployment
-* OPTIONAL: Update your world's background (using the *Administrator Setup*).
+* OPTIONAL: Update your world's background using the *Administrator Setup*.
+* Set the ```Join Path Theme``` to ```Minimal``` using the *World Setup*.
 * Upload your world logo in your FoundryVTT instance.
     * I advise you to use the *Administrator Setup* in the same way as if you were updating the world's background WITHOUT clicking on *Update World*. This will upload the file in the root directory of your FoundryVTT instance.
 * Overwrite your ```$foundry_path/resources/app/templates/setup/join-game.hbs``` with [the one in the repo](join-game.hbs).

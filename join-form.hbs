@@ -1,0 +1,31 @@
+<!-- Adding custom-app class -->
+<form class="application standard-form framed custom-app" autocomplete="off">
+    <h2 class="divider">{{ localize "JOIN.HeaderJoin" }}</h2>
+    <div class="form-group">
+        <label class="icon" data-tooltip="{{ localize 'JOIN.SelectUser' }}"><i class="fas fa-user"></i></label>
+        <div class="form-fields">
+            <!-- Adding required keyword -->
+            <select required name="userid">
+                <!-- Adding disabled selected hidden keywords to username, updated label -->
+                <option value="" disabled selected hidden>User</option>
+                {{#each users}}
+                    <option value="{{this.id}}" {{#if this.active}}disabled{{/if}}>{{this.name}}</option>
+                {{/each}}
+            </select>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="icon"  data-tooltip="{{ localize 'JOIN.UserKey' }}"><i class="fas fa-key"></i></label>
+        <div class="form-fields">
+            <input type="password" name="password" placeholder="{{ localize "USERS.AccessKey" }}"
+                   value="" autocomplete="off">
+        </div>
+    </div>
+    <footer class="form-footer">
+        <button type="submit" name="join" class="bright">
+            <i class="fas fa-check"></i>
+            <!-- Updated label -->
+            <label>JOIN GAME</label>
+        </button>
+    </footer>
+</form>

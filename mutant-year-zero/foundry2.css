@@ -1,0 +1,248 @@
+/*
+FoundryVTT Login Pages made by Doluprane
+Kind of a fork from github.com/dandln
+Based on code by u/bass-blowfish
+
+Currently working in v12
+Will not be backported in v11
+*/
+
+/* CONFIGURATION AREA */
+body.auth, #watermark {
+  --login-world-logo:url("/myz-logo.webp");
+  --login-world-logo-size:45%;
+  --login-button-color:rgba(244, 191, 91, 0.8);
+  --login-button-color-hover:rgba(244, 191, 91, 1.0);
+  --login-button-text-color:black;
+  --login-app-background-color:rgba(11, 9, 10, 0.8);
+  --login-input-text-background-color:rgba(113, 52, 21, 1.0);
+  --login-input-text-color:white;
+  --login-input-text-color-placeholder:rgba(135, 135, 135, 1.0);
+  --font:Trixie,'Courier New',Courier,monospace
+}
+
+/* FORM */
+body.auth .custom-app {
+  padding:1.15rem;
+  box-shadow:0 0 5px black;
+  background:var(--login-app-background-color);
+  width:25%;
+  position:fixed!important;
+  top:60%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  flex:none;
+  gap:1rem;
+  max-width:var(--maxWidth);
+  max-height:100%;
+  display:flex;
+  flex-direction:column;
+  flex-wrap:nowrap;
+  justify-content:flex-start;
+  backdrop-filter:blur(4px);
+  border:none;
+  z-index:var(--z-index-app);
+  transform-origin:top left;
+  -webkit-animation:slide-in-bck-bottom 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation:slide-in-bck-bottom 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both
+}
+
+/* BACKGROUND */
+body.background {
+  -webkit-animation:fade-in 2.0s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  animation:fade-in 2.0s cubic-bezier(0.390, 0.575, 0.565, 1.000) both
+}
+
+/* CUSTOM HEADER WITH WORLD LOGO */
+body.join #main-header {
+  background:var(--login-world-logo);
+  background-repeat:no-repeat;
+  background-size:var(--login-world-logo-size);
+  background-position-x:center;
+  background-position-y:center;
+  height:120px!important;
+  border:none;
+  box-shadow:none;
+  position:fixed;  
+  top:7.5%; 
+  left:0;
+  width:100%;
+  height:35vh!important;
+  -webkit-animation:slide-in-bck-top 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation:slide-in-bck-top 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+  
+body.join #join-game {
+  grid-template-columns:1fr!important;
+  width:400px!important;
+  top:calc(50% - 300px)!important
+}
+  
+body.join #join-game input, body.join #join-game select, body.join #join-game button {
+  min-height:40px;
+  padding:10px!important;
+  border:none!important;
+  font-size:15px;
+  width:100%;
+  font-family:var(--font)
+}
+  
+body.join #join-game input:focus, body.join #join-game select:focus {
+  outline:solid var(--login-button-color)
+}
+  
+body.join #join-game select option {
+  background:var(--login-input-text-background-color);
+  color:var(--login-input-text-color)
+}
+  
+body.join #join-game input[type="text"], body.join #join-game input[type="password"], body.join select {
+  background:var(--login-input-text-background-color);
+  color:var(--login-input-text-color);
+  text-align:center;
+  text-align:-webkit-center;
+  line-height:100%
+}
+  
+body.join #join-game button {
+  position:relative;
+  z-index:0;
+  width:240px;
+  height:45px;
+  text-decoration:none;
+  font-size:14px;
+  font-weight:bold;
+  background-color:var(--login-button-color);
+  color:var(--login-button-text-color);
+  letter-spacing:3px;
+  transition:all .3s ease;
+  font-family:var(--font)
+}
+  
+body.join #join-game button__text {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  width:100%;
+  height:100%
+}
+  
+body.join #join-game button__text::before {
+  bottom:0;
+  right:54px;
+  width:calc(100% - 56px * 2 - 16px)
+}
+  
+body.join #join-game button__text::after {
+  bottom:0;
+  left:54px;
+  width:8px
+}
+  
+body.join #join-game button:hover, body.join #join-game button:focus {
+  background:var(--login-button-color-hover);
+  box-shadow:none;
+  letter-spacing:6px
+}
+  
+body.join #join-game button:focus {
+  outline:none
+}
+
+/* ADDING A DICE NEXT TO LABEL */  
+body.join #join-game button[name="join"]:after {
+  content:"\f522";
+  padding-left:5px;
+  font-family:'FontAwesome'
+}
+  
+body.join #join-game select:required:invalid {
+  color:var(--login-input-text-color-placeholder)!important
+}
+  
+body.join #join-game select {
+  appearance:none;
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  text-align-last:center
+}
+  
+body.join #join-game input::placeholder, body.join #join-game select option:disabled {
+  color:var(--login-input-text-color-placeholder)
+}
+
+body.join #main-header h1, body.auth label.icon, body.join #join-game-setup, body.join #join-game-world, body.join #join-game-details, body.join #join-game .divider, body.join #join-game .return-setup, body.join #join-game button[name="join"] i.fas.fa-check, body.join #join-game button[name="shutdown"] .fas.fa-lock, body.join #join-game select option:checked {
+  display:none
+}
+
+/* CSS ANIMATIONS */
+
+/* USED BY LOG IN FORM */
+@-webkit-keyframes slide-in-bck-bottom {
+  0% {
+    -webkit-transform:  translate(-50%, 500px);
+            transform:  translate(-50%, 500px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform:  translate(-50%, 0);
+            transform:  translate(-50%, 0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-bck-bottom {
+  0% {
+    -webkit-transform:  translate(-50%, 500px);
+            transform:  translate(-50%, 500px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform:  translate(-50%, 0);
+            transform:  translate(-50%, 0);
+    opacity: 1;
+  }
+}
+
+/* USED BY WALLPAPER / BACKGROUND */
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* USED BY HEADER */
+@-webkit-keyframes slide-in-bck-top {
+  0% {
+    -webkit-transform: translateZ(700px) translateY(-300px);
+            transform: translateZ(700px) translateY(-300px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0) translateY(0);
+            transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-bck-top {
+  0% {
+    -webkit-transform: translateZ(700px) translateY(-300px);
+            transform: translateZ(700px) translateY(-300px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0) translateY(0);
+            transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}

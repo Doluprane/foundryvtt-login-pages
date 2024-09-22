@@ -14,6 +14,10 @@ Below you'll find everything you need to use the package.
 ![The Witcher](_samples/the-witcher-rendered.png)<br>
 ### <p align="center">Alien</p>
 ![Alien](_samples/alien-rendered.png)<br>
+### <p align="center">Twilight:2000</p>
+![Twilight:2000](_samples/t2k-rendered.png)<br>
+### <p align="center">Mutant:Year Zero</p>
+![Mutant:Year Zero](_samples/myz-rendered.png)<br>
 
 # Requirements
 * A minimal resolution of 870px by 500px (shouldn't be an issue as Foundry requires 1024px by 700px to work).
@@ -52,3 +56,9 @@ Below you'll find everything you need to use the package.
 
 * Alien
     * Background and logo are taken from [Free League Publishing](https://freeleaguepublishing.com/) ([Website](https://freeleaguepublishing.com/games/alien/) and/or [Rulebooks](https://freeleaguepublishing.com/shop/alien-rpg-2/)).
+
+* Twilight:2000
+    * Background and logo are taken from [Free League Publishing](https://freeleaguepublishing.com/) ([Website](https://freeleaguepublishing.com/games/twilight-2000/) and/or [Rulebooks](https://freeleaguepublishing.com/shop/twilight-2000/)).
+
+* Mutant:Year Zero
+    * Background and logo are taken from [Free League Publishing](https://freeleaguepublishing.com/) ([Website](https://freeleaguepublishing.com/games/mutant-year-zero/) and/or [Rulebooks](https://freeleaguepublishing.com/shop/mutant-year-zero/)).

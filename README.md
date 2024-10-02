@@ -9,15 +9,17 @@ Below you'll find everything you need to use the package.
 ### <p align="center">Tales From The Loop</p>
 ![Tales From The Loop Rendered](_samples/tftl-rendered.png)<br>
 ### <p align="center">Dungeons & Dragons</p>
-![Dungeons & Dragons](_samples/d&d-rendered.png)<br>
+![Dungeons & Dragons Rendered](_samples/d&d-rendered.png)<br>
 ### <p align="center">The Witcher</p>
-![The Witcher](_samples/the-witcher-rendered.png)<br>
+![The Witcher Rendered](_samples/the-witcher-rendered.png)<br>
 ### <p align="center">Alien</p>
-![Alien](_samples/alien-rendered.png)<br>
+![Alien Rendered](_samples/alien-rendered.png)<br>
 ### <p align="center">Twilight:2000</p>
-![Twilight:2000](_samples/t2k-rendered.png)<br>
+![Twilight:2000 Rendered](_samples/t2k-rendered.png)<br>
 ### <p align="center">Mutant:Year Zero</p>
-![Mutant:Year Zero](_samples/myz-rendered.png)<br>
+![Mutant:Year Zero Rendered](_samples/myz-rendered.png)<br>
+### <p align="center">Coriolis</p>
+![Coriolis Rendered](_samples/coriolis-rendered.png)<br>
 
 # Requirements
 * A minimal resolution of 870px by 500px (shouldn't be an issue as Foundry requires 1024px by 700px to work).
@@ -62,3 +64,6 @@ Below you'll find everything you need to use the package.
 
 * Mutant:Year Zero
     * Background and logo are taken from [Free League Publishing](https://freeleaguepublishing.com/) ([Website](https://freeleaguepublishing.com/games/mutant-year-zero/) and/or [Rulebooks](https://freeleaguepublishing.com/shop/mutant-year-zero/)).
+
+* Coriolis
+    * Background and logo are taken from [Free League Publishing](https://freeleaguepublishing.com/) ([Website](https://freeleaguepublishing.com/games/coriolis/) and/or [Rulebooks](https://freeleaguepublishing.com/shop/coriolis/)).

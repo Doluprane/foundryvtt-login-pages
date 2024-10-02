@@ -9,16 +9,16 @@ Will not be backported in v11
 
 /* CONFIGURATION AREA */
 body.auth, #watermark {
-  --login-world-logo: url("/d&d-logo.webp");
+  --login-world-logo:url("/d&d-logo.webp");
   --login-world-logo-size:50%;
-  --login-button-color: rgba(255, 0, 0, 0.8);
-  --login-button-color-hover: rgba(255, 0, 0, 1.0);
-  --login-button-text-color: black;
-  --login-app-background-color: rgba(11, 9, 10, 0.8);
-  --login-input-text-background-color: rgba(80, 2, 4, 1.0);
-  --login-input-text-color: white;
-  --login-input-text-color-placeholder: rgba(135, 135, 135, 1.0);
-  --font: Trixie,'Courier New',Courier,monospace
+  --login-button-color:rgba(255, 0, 0, 0.8);
+  --login-button-color-hover:rgba(255, 0, 0, 1.0);
+  --login-button-text-color:black;
+  --login-app-background-color:rgba(11, 9, 10, 0.8);
+  --login-input-text-background-color:rgba(80, 2, 4, 1.0);
+  --login-input-text-color:white;
+  --login-input-text-color-placeholder:rgba(135, 135, 135, 1.0);
+  --font:Trixie,'Courier New',Courier,monospace
 }
 
 /* FORM */

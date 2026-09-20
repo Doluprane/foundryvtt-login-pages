@@ -3,13 +3,13 @@ FoundryVTT Login Pages made by Doluprane
 Kind of a fork from github.com/dandln
 Based on code by u/bass-blowfish
 
-Currently working in v12
-Will not be backported in v11
+Currently working in v12 or v14
+Will not be backported in v11 or v13
 */
 
 /* CONFIGURATION AREA */
 body.auth, #watermark {
-  --login-world-logo:url("/vaesen-logo.webp");
+  --login-world-logo:url("/assets/vaesen-logo.webp");
   --login-world-logo-size:60%;
   --login-button-color:rgba(86, 130, 3, 0.8);
   --login-button-color-hover:rgba(86, 130, 3, 1.0);

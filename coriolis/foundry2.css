@@ -3,13 +3,13 @@ FoundryVTT Login Pages made by Doluprane
 Kind of a fork from github.com/dandln
 Based on code by u/bass-blowfish
 
-Currently working in v12
-Will not be backported in v11
+Currently working in v12 or v14
+Will not be backported in v11 or v13
 */
 
 /* CONFIGURATION AREA */
 body.auth, #watermark {
-  --login-world-logo:url("/coriolis-logo.webp");
+  --login-world-logo:url("/assets/coriolis-logo.webp");
   --login-world-logo-size:55%;
   --login-button-color:rgba(128, 128, 128, 0.8);
   --login-button-color-hover:rgba(128, 128, 128, 1.0);

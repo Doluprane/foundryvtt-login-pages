@@ -24,15 +24,15 @@ Below you'll find everything you need to use the package.
 # Requirements
 * A minimal resolution of 870px by 500px (shouldn't be an issue as Foundry requires 1024px by 700px to work).
 * An access to your Foundry instance to modify files.
-* FoundryVTT v12.x. This package will not be backported for v11. Check [Releases](https://github.com/Doluprane/foundryvtt-login-pages/releases) page for previous versions.
+* FoundryVTT v14.x. This package will not be backported for previous releases. Check [Releases](https://github.com/Doluprane/foundryvtt-login-pages/releases) page for previous versions.
 
 # Deployment
 * OPTIONAL: Update your world's background using the *Administrator Setup*.
 * Set the ```Join Page Theme``` to ```Minimal``` using the *World Setup*.
-* Upload your world logo in your FoundryVTT instance.
+* Upload your world logo in your FoundryVTT instance (in ```/assets/```).
     * I advise you to use the *Administrator Setup* in the same way as if you were updating the world's background WITHOUT clicking on *Update World*. This will upload the file in the root directory of your FoundryVTT instance.
-* Overwrite your ```$foundry_path/resources/app/templates/setup/parts/join-form.hbs``` with [the one in the repo](join-form.hbs).
-* Concatenate your ```$foundry_path/resources/app/public/css/foundry2.css``` with (for example) [The Witcher style](the-witcher/foundry2.css).
+* Overwrite your ```$foundry_path/templates/setup/parts/join-form.hbs``` with [the one in the repo](join-form.hbs).
+* Concatenate your ```$foundry_path/public/css/foundry2.css``` with (for example) [The Witcher style](the-witcher/foundry2.css).
 * Don't forget to configure your updated CSS in the [*Configuration Area*](the-witcher/foundry2.css#L10).
 
 # Known bugs

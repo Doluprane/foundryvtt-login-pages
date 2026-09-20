@@ -3,8 +3,8 @@ FoundryVTT Login Pages made by Doluprane
 Kind of a fork from github.com/dandln
 Based on code by u/bass-blowfish
 
-Currently working in v12
-Will not be backported in v11
+Currently working in v12 or v14
+Will not be backported in v11 or v13
 -->
 
 <!-- Adding custom-app class -->
@@ -14,11 +14,11 @@ Will not be backported in v11
         <label class="icon" data-tooltip="{{ localize 'JOIN.SelectUser' }}"><i class="fas fa-user"></i></label>
         <div class="form-fields">
             <!-- Adding required keyword -->
-            <select required name="userid">
+            <select required name="username" id="join-username">
                 <!-- Adding disabled selected hidden keywords to username, updated label -->
                 <option value="" disabled selected hidden>User</option>
-                {{#each users}}
-                    <option value="{{this.id}}" {{#if this.active}}disabled{{/if}}>{{this.name}}</option>
+                {{#each users.contents as |user|}}
+                    <option value="{{user.name}}">{{user.name}}</option>
                 {{/each}}
             </select>
         </div>
